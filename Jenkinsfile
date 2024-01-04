@@ -4,8 +4,8 @@ pipeline {
         maven 'M2_HOME'
     }
     environment {
-        registry = '178460163237.dkr.ecr.us-east-1.amazonaws.com/devd'
-        registryCredential = 'jenkins-ecr'
+        registry = '178460163237.dkr.ecr.us-east-1.amazonaws.com/devops_repository'
+        registryCredential = 'Jenkins-ecr'
         dockerimage = ''
     }
     stages {
