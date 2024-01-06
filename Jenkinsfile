@@ -5,13 +5,13 @@ pipeline {
     }
     environment {
         registry = '178460163237.dkr.ecr.us-east-1.amazonaws.com/devops_repository'
-        registryCredential = 'Jenkins-ecr'
+        registryCredential = 'jenkins-ecr'
         dockerimage = ''
     }
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/mumba2023/helloworld_pipeline.git'
+                git branch: 'main', url: 'https://github.com/utrains/helloworld_pipeline.git'
             }
         }
         stage('Code Build') {
